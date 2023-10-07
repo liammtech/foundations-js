@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Assignment - Exercise 1
+        function add7 (num1) {
+            console.log(num1 + 7);
+        }
+
+        // Assignment - Exercise 2
+        function multiply (num1, num2) {
+            console.log(num1 * num2);
+        }
+
+        // Assignment - Exercise 3
+        function capitalize (string1) {
+            if (typeof(string1) === "string") { 
+                string1 = string1.toLowerCase();
+                substr1 = string1[0];
+                substr2 = string1.substr(1);
+                console.log(substr1.toUpperCase() + substr2);
+            } else {
+                String(string1);
+                capitalize(string1);
+            }
+        }
+
+        // Assignment 4 - Exercise 4
+        function lastLetter (string1) {
+            console.log(string1.slice(-1));
+        }
+
+        console.log("Function 1 result - add7:");
+        add7(6);
+
+        console.log("Function 2 result - multiply:");
+        multiply(9, 9);
+
+        console.log("Function 3 result - capitalize:");
+        capitalize("tHis heRE sTRinG neEdS SORtiNg");
+
+        console.log("Function 4 result - lastLetter:");
+        lastLetter("Gimme dat dere last letter")
+
+    </script>
+</body>
+</html>
